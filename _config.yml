@@ -98,7 +98,6 @@ author:
   avatar           : /assets/images/profile.jpeg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Incoming Masters Student at Department of Computer Science, Dartmouth College."
   location         : "Burlington, MA"
-  email            : aadilislam101@gmail.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
