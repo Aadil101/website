@@ -96,7 +96,7 @@ analytics:
 author:
   name             : "Aadil Islam"
   avatar           : /assets/images/profile.jpeg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Incoming Masters Student at Department of Computer Science, Dartmouth College."
+  bio              : "Graduating Senior & Incoming Masters Student @ Department of Computer Science, Dartmouth College."
   location         : "Burlington, MA"
   links:
     - label: "Email"
