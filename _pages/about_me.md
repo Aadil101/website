@@ -17,5 +17,5 @@ My name is Aadil. People often seem to improv the pronunciation of my name. Here
 - A-deal the real deal 🏆
 - A-dale ❓
 
-I'm an aspiring data scientist currently finishing up my undergrad 🎓. This fall, I'm hoping to begin my masters. I hope this site gives you taste of my passions in statistics and computer science 😊.
+I'm an aspiring data scientist currently finishing up my undergrad 🎓. This fall, I'm hoping to begin my masters. I hope this site gives you a taste of my passions in statistics and computer science 😊.
 
