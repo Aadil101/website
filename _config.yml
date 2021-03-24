@@ -96,7 +96,7 @@ analytics:
 author:
   name             : "Aadil Islam"
   avatar           : /assets/images/profile.jpeg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Graduating Senior & Incoming Masters Student @ Department of Computer Science, Dartmouth College."
+  bio              : "Senior & Incoming Masters Student @ Department of Computer Science, Dartmouth College 🌲"
   location         : "Burlington, MA"
   links:
     - label: "Email"
@@ -110,7 +110,7 @@ author:
       url: "https://github.com/Aadil101"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/aadilislam/"
+      url: "https://linkedin.com/in/aadilislam/"
 
 # Site Footer
 footer:
@@ -126,7 +126,7 @@ footer:
       url: "https://github.com/Aadil101"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/aadilislam/"
+      url: "https://linkedin.com/in/aadilislam/"
 
 # Reading Files
 include:
