@@ -2,7 +2,6 @@
 layout: single
 permalink: /about_me/
 title: "About Me"
-toc: false
 #header:
 #  overlay_color: "#5e616c"
 #  overlay_image: /assets/images/rockport.jpeg
