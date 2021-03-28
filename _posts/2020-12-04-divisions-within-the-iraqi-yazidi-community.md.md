@@ -48,9 +48,9 @@ Apparent from this discussion are some of the influences perhaps beyond the Iraq
 
 Abrahamian, Levon. *Armenian Identity in a Changing World*. Mazda Publ., 2006. 
 
-Ali, Majid H. "Aspirations for Ethnonationalist Identities among Religious Minorities in Iraq: The Case of Yazidi Identity in the Period of Kurdish and Arab Nationalism, 1963--2003." *Nationalities Papers*, vol. 47, no. 6, November 2019, pp. 953-967. doi: [https://doi.org/10.1017/nps.2018.20]{.ul}.
+Ali, Majid H. "Aspirations for Ethnonationalist Identities among Religious Minorities in Iraq: The Case of Yazidi Identity in the Period of Kurdish and Arab Nationalism, 1963--2003." *Nationalities Papers*, vol. 47, no. 6, November 2019, pp. 953-967. doi: https://doi.org/10.1017/nps.2018.20.
 
-Ali, Majid H. "The identity controversy of religious minorities in Iraq: the crystallization of the Yazidi identity after 2003." *British Journal of Middle Eastern Studies*, vol. 46, no. 2, February 2019. doi: [10.1080/13530194.2019.1577129]{.ul}.
+Ali, Majid H. "The identity controversy of religious minorities in Iraq: the crystallization of the Yazidi identity after 2003." *British Journal of Middle Eastern Studies*, vol. 46, no. 2, February 2019. doi: 10.1080/13530194.2019.1577129.
 
 Allison, Christine. *The Yezidi Oral Tradition in Iraqi Kurdistan*. Routledge, 2015. 
 
@@ -64,26 +64,26 @@ Benjamen, Alda. "Minorities and the Kurdish Referendum." *The University of Chic
 
 Donabed, Sargon. *Reforging a Forgotten History: Iraq and the Assyrians in the Twentieth Century*. Edinburgh University Press Ltd, 2016. 
 
-Ferdinando, Keith. "Sickness and Syncretism in the African." *Mission and Meaning: Essays Presented to Peter Cotterell*, Paternoster Press, 1995, [https://www.missiology.org.uk/pdf/cotterell-fs/15_ferdinando.pdf.]{.ul}
+Ferdinando, Keith. "Sickness and Syncretism in the African." *Mission and Meaning: Essays Presented to Peter Cotterell*, Paternoster Press, 1995, https://www.missiology.org.uk/pdf/cotterell-fs/15_ferdinando.pdf.
 
-Haspeslagh, Sophie. *Safe Havens in Iraq: Operation Provide Comfort*. Beyond Intractability, [https://www.beyondintractability.org/cic_documents/Safe-Havens-Iraq.pdf]{.ul}.
+Haspeslagh, Sophie. *Safe Havens in Iraq: Operation Provide Comfort*. Beyond Intractability, https://www.beyondintractability.org/cic_documents/Safe-Havens-Iraq.pdf.
 
-Helfont, Samuel. "The Legacy Of Saddam\'s Islam." *The* *Hoover Institution at Stanford University*, 4 Dec. 2018, [https://www.hoover.org/research/legacy-saddams-islam]{.ul}. 
+Helfont, Samuel. "The Legacy Of Saddam\'s Islam." *The* *Hoover Institution at Stanford University*, 4 Dec. 2018, https://www.hoover.org/research/legacy-saddams-islam.
 
-Jabbar, Faleh Abdel. "The Iraqi Communist Party". Catusse, Myriam, and Karam Karam. *Returning to Political Parties? Partisan Logic and Political Transformations in the Arab World.* Beyrouth: Presses de l'Ifpo, 2010. (pp. 293-312) Web. \<[http://books.openedition.org/ifpo/1111]{.ul}\>.
+Jabbar, Faleh Abdel. "The Iraqi Communist Party". Catusse, Myriam, and Karam Karam. *Returning to Political Parties? Partisan Logic and Political Transformations in the Arab World.* Beyrouth: Presses de l'Ifpo, 2010. (pp. 293-312) Web. http://books.openedition.org/ifpo/1111
 
 Joseph, Isya, and E. G. Browne, translators. *Devil Worship: the Sacred Books and Traditions of the Yezidiz*. By Sheikh Adi, CreateSpace Independent Publishing Platform, 2016.
 
 Kreyenbroek, Philip G., and Stefan Sperl. *The Kurds a Contemporary Overview*. Routledge, 2015. 
 
-Morris, Loveday, et al. "Iraqi Forces Move Deeper into Kurdish-Held Areas, Redrawing Political Map." *The Washington Post*, WP Company, 17 Oct. 2017, [https://www.washingtonpost.com/world/iraqi-forces-take-back-sinjar-in-latest-effort-to-roll-back-kurdish-gains-of-the-past-years/2017/10/17/61032770-b30d-11e7-9e58-e6288544af98_story.html]{.ul}. 
+Morris, Loveday, et al. "Iraqi Forces Move Deeper into Kurdish-Held Areas, Redrawing Political Map." *The Washington Post*, WP Company, 17 Oct. 2017, https://www.washingtonpost.com/world/iraqi-forces-take-back-sinjar-in-latest-effort-to-roll-back-kurdish-gains-of-the-past-years/2017/10/17/61032770-b30d-11e7-9e58-e6288544af98_story.html.
 
-Salloum, Saad. *Political Participation of Minorities in Iraq*. Heartland Alliance International and MCMD, 2016, [https://www.heartlandalliance.org/wp-content/uploads/2016/01/HumanRightsViolationsReport-English.pdf]{.ul}.
+Salloum, Saad. *Political Participation of Minorities in Iraq*. Heartland Alliance International and MCMD, 2016, https://www.heartlandalliance.org/wp-content/uploads/2016/01/HumanRightsViolationsReport-English.pdf.
 
 Suvari, Çakır C. "Yezidis: An Ethno-Religious Group in Turkey." *Forum of EthnoGeoPolitics*, vol. 4, no. 2, 2016, pp. 19-38.
 
-United Nations High Commissioner for Refugees (UNHCR). *UNHCR's ELIGIBILITY GUIDELINES FOR ASSESSING THE INTERNATIONAL PROTECTION NEEDS OF IRAQI ASYLUM-SEEKERS.* The UN Refugee Agency, 2007, [https://www.refworld.org/pdfid/46deb05557.pdf]{.ul}.
+United Nations High Commissioner for Refugees (UNHCR). *UNHCR's ELIGIBILITY GUIDELINES FOR ASSESSING THE INTERNATIONAL PROTECTION NEEDS OF IRAQI ASYLUM-SEEKERS.* The UN Refugee Agency, 2007, https://www.refworld.org/pdfid/46deb05557.pdf.
 
-Yarar, Eralp. "Sinjar Deal May Help Remove PKK Presence, Return Displaced Yazidis." *Daily Sabah*, Daily Sabah, 18 Oct. 2020, [www.dailysabah.com/politics/news-analysis/sinjar-deal-may-help-remove-pkk-presence-return-displaced-yazidis]{.ul}. 
+Yarar, Eralp. "Sinjar Deal May Help Remove PKK Presence, Return Displaced Yazidis." *Daily Sabah*, Daily Sabah, 18 Oct. 2020, www.dailysabah.com/politics/news-analysis/sinjar-deal-may-help-remove-pkk-presence-return-displaced-yazidis.
 
-Zoonen, Dave v., and Khogir Wirya. *The Yazidis -- Perceptions of Reconciliation and Conflict*. MERI -- The Middle East Research Institute, 2017, [https://www.usip.org/sites/default/files/Yazidis-Perceptions-of-Reconciliation-and-Conflict-Report.pdf]{.ul}
+Zoonen, Dave v., and Khogir Wirya. *The Yazidis -- Perceptions of Reconciliation and Conflict*. MERI -- The Middle East Research Institute, 2017, https://www.usip.org/sites/default/files/Yazidis-Perceptions-of-Reconciliation-and-Conflict-Report.pdf.
