@@ -16,16 +16,19 @@ My name is Aadil. People often seem to improv the pronunciation of my name. Here
 - A-deal the real deal 🏆
 - A-dale ❓
 
-# In Short
+# Summary
 
-I'm an aspiring data scientist currently finishing up my undergrad 🎓 This fall, I'm hoping to begin my masters. I hope this site gives you a taste of my passions in statistics and computer science 😊
-
-My interests in applied machine learning largely pertain to natural language processing (eg. lexical complexity prediction & anomalous text detection) 💻 I've been fortunate to have had internship experiences where I applied face clustering algorithms and improved object detection models.
+I'm an aspiring data scientist currently finishing up my undergrad. This fall, I'm hoping to begin my masters 🎓 I hope this site gives you a taste of my passions in statistics and computer science 😊 My interests in applied machine learning largely pertain to natural language processing (eg. lexical complexity prediction & anomalous text detection) 💻 
 
 # Education
 
-**Major: Computer Science / Minor: Statistics**
+I'm a senior at Dartmouth College (hoping to graduate in Spring 2021) majoring in Computer Science and minoring in Statistics 🌲
 
-Dartmouth College
+# Experience
 
-2017-2021
+I've been fortunate to have had internship experiences where I worked on:
+
+- A fully unsupervised anomalous document detection pipeline 🎯
+- A document classification pipeline 📄
+- Designing novel face-clustering algorithms 😎
+- Improving personnel-vehicle object detection models 🚗 🚶🏽‍♂️
