@@ -4,6 +4,7 @@ title: Perpetuation of Islamophobia
 date: 30 May 2018 
 author_profile: true
 share: false
+categories: writing
 ---
 
 This is my final paper for Sociology 7: *Race and Ethnicity: Social Constructions and Social Realities* with Professor Emily Walton:

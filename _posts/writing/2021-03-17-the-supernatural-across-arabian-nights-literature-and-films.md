@@ -4,6 +4,7 @@ title: The Supernatural Across Arabian Nights Literature and Films
 date: 17 March 2021
 author_profile: true
 share: false
+categories: writing
 ---
 
 This is my final paper for Middle Eastern Studies MES 16.07: *Arabian Nights East and West* with Professor Hussein Kadhim:

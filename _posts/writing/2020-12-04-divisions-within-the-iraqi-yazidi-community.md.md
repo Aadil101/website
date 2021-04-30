@@ -4,6 +4,7 @@ title: Division within the Iraqi Yazidi Community
 date: 04 December 2020
 author_profile: true
 share: false
+categories: writing
 ---
 
 This is my final paper for Middle Eastern Studies 12.02: *Modern Iraq: Society, Politics, and Literature* with Professor Hussein Kadhim:

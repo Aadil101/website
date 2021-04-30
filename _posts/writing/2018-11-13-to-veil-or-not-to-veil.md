@@ -4,6 +4,7 @@ title: To Veil or Not to Veil
 date: 13 November 2018
 author_profile: true
 share: false
+categories: writing
 ---
 
 This is my final paper for Religion 19.19: *Religion and Technology* with Professor Jeremy Sabella:

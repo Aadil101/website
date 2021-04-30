@@ -4,6 +4,7 @@ title: The Joker's Message
 date: 13 March 2018 
 author_profile: true
 share: false
+categories: writing
 ---
 
 This is my final paper for Writing 5: *The Pursuit of Happiness* with Professor Deanne Harper:

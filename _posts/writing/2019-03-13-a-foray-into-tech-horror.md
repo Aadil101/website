@@ -4,6 +4,7 @@ title: A Foray into Tech Horror
 date: 3 March 2019
 author_profile: true
 share: false
+categories: writing
 ---
 
 This is my final project for Film 41.10: *Global Gothic* with Professor Dennis Washburn:

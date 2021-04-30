@@ -4,6 +4,7 @@ title: Oral History Project
 date: 17 February 2020
 author_profile: true
 share: false
+categories: writing
 ---
 
 This is a project in which I interviewed my aunt regarding a memorable experience of hers. I then discuss my experiences with interviewing someone for the first time, within the context of indigenous oral history traditions. This is for Native American Studies 22: *Native American Lives* with Professor Vera Palmer:
