@@ -7,7 +7,7 @@ share: false
 categories: writing
 ---
 
-This is my final paper for Middle Eastern Studies 12.02: *Modern Iraq: Society, Politics, and Literature* with Professor Hussein Kadhim:
+This is my final paper for *MES 12.02 Modern Iraq: Society, Politics, and Literature* with Professor Hussein Kadhim:
 
 The ISIL takeover of large parts of northern Iraq in August 2014 commenced a genocide of thousands of Yazidis, members of an ethno-religious minority of less than a million in total population. This only adds to the Yazidis' history of being a targeted people, possessing spiritual beliefs that differ from the majority of those residing in their region of Kurdistan--who identify as Sunni Muslim. Despite having seats in Iraqi parliament, these are generally few in number relative to their population size, leaving Yazidi citizens with the choice of whom to express support for; on one hand, existing Yazidi political parties have struggled to get legislature passed due to their youth (wrt. year of founding); on the other hand, well-established Kurdish political parties desire the support of minorities such as the Yazidis, at times succeeding by being merely the only viable means of protection, rather than ideally serving the needs of the minority, as they often promise to. What receives less attention is how the Yazidis are a *divided* people, influenced by, at least within the scope of our immediate discussion, one's interpretation of identity amidst movements particularly promoting Kurdish and Arab nationalism. In this paper, I hope to demonstrate that the divisions within the Iraqi Yazidi community reflect to a certain extent their divergent political allegiances, rather than underlying religious-cultural differences.
 

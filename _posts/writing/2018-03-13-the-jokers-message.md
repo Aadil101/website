@@ -7,7 +7,7 @@ share: false
 categories: writing
 ---
 
-This is my final paper for Writing 5: *The Pursuit of Happiness* with Professor Deanne Harper:
+This is my final paper for *WRIT 5 The Pursuit of Happiness* with Professor Deanne Harper:
 
 &quot;Some men just want to watch the world burn,&quot; says butler Alfred Pennyworth. He speaks this memorable line about nihilists to Batman in Christopher Nolan's 2008 film _The Dark Knight_. Although typical superhero movies tend to showcase fanciful fight scenes and alien characters with colorful costumes, _The Dark Knight_ does just enough to connect solid entertainment back to reality. A masked vigilante by the name of Batman finds inspiration from childhood trauma and a fear of bats, channeling his emotions into protecting his beloved city of Gotham from evil and destruction. He must deal with rising tensions in his city, a borough plagued by crime and corruption across the social classes. Some criminals have large desires for money and power, and they will do anything to obtain these for the sake of financial well-being, security, etc. But some criminals break the law to make a statement, and this precisely describes a particular diabolical clown: The Joker. To the Joker, society needs mayhem to house the corrupt and misguided. He does not believe in collective happiness because he thinks that each individual focusses on pursuing his or her own personal happiness. Both Batman and his foe strive to show Gotham's true colors, while having divergent perspectives on how society should function. Through conflict between the Joker and Gotham, we see that collective happiness in society is attainable, but it requires that people are virtuous enough to sacrifice their personal happiness for the well-being of others.
 

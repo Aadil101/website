@@ -7,7 +7,7 @@ share: false
 categories: writing
 ---
 
-This is my final paper for Religion 19.19: *Religion and Technology* with Professor Jeremy Sabella:
+This is my final paper for *REL 19.19 Religion and Technology* with Professor Jeremy Sabella:
 
 Suppose you wait in an airport security line and notice a woman wearing a veil being asked to step aside for questioning. What assumptions might you make? Perhaps you suspect the woman is Muslim due to how she dresses, and that this raised her chances of receiving a 'random' security check. Regardless of whether you are correct, the mere presence of a cloth on one's body has the potential to reveal faith and lead strangers to form opinions about someone. Evidently, a technology as basic as the headscarf has become a religious symbol that isolates certain cultures from the rest of society, but by emphasizing the truths of religion and correcting our misconceptions we are beginning to see more inclusivity.
 

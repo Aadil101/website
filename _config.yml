@@ -17,7 +17,7 @@ minimal_mistakes_skin_2  : "default"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Data Science"
+title                    : "ai Website"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Aadil Islam"
@@ -97,7 +97,7 @@ analytics:
 author:
   name             : "Aadil Islam"
   avatar           : /assets/images/profile.jpeg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Senior & Incoming Masters Student @ Department of Computer Science, Dartmouth College 🌲"
+  bio              : "Master's Student @ Department of Computer Science, Dartmouth College 🌲"
   location         : "Burlington, MA"
   links:
     - label: "Email"

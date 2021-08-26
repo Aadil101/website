@@ -7,7 +7,7 @@ share: false
 categories: writing
 ---
 
-This is a project in which I interviewed my aunt regarding a memorable experience of hers. I then discuss my experiences with interviewing someone for the first time, within the context of indigenous oral history traditions. This is for Native American Studies 22: *Native American Lives* with Professor Vera Palmer:
+This is a project in which I interviewed my aunt regarding a memorable experience of hers. I then discuss my experiences with interviewing someone for the first time, within the context of indigenous oral history traditions. This is for *NAS 22 Native American Lives* with Professor Vera Palmer:
 
 ## Introduction
 

@@ -5,7 +5,7 @@ title: "Coding"
 author_profile: true
 ---
 
-The good stuff.
+Here, you can check out some of my research interests and personal projects.
 
 <ul class="taxonomy__index">
   {% assign postsInYear = site.categories.coding | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date | date: "%Y"' %}
