@@ -5,6 +5,7 @@ date: 30 May 2018
 author_profile: true
 share: false
 categories: writing
+show_date: true
 ---
 
 This is my final paper for *SOCY 7 Race and Ethnicity: Social Constructions and Social Realities* with Professor Emily Walton:

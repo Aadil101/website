@@ -5,6 +5,7 @@ date: 04 December 2020
 author_profile: true
 share: false
 categories: writing
+show_date: true
 ---
 
 This is my final paper for *MES 12.02 Modern Iraq: Society, Politics, and Literature* with Professor Hussein Kadhim:

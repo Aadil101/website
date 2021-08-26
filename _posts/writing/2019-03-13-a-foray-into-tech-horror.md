@@ -5,6 +5,7 @@ date: 3 March 2019
 author_profile: true
 share: false
 categories: writing
+show_date: true
 ---
 
 This is my final project for *FILM 41.10 Global Gothic* with Professor Dennis Washburn:

@@ -5,7 +5,12 @@ date: 18 March 2021
 author_profile: true
 share: false
 categories: coding
+show_date: true
 ---
+
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 
 This is my team's final project for *COSC 89.21 Data Mining and Knowledge* with Professor Soroush Vosoughi. Our team consisted of Yakoob Khan, Luca C. L. Lit, Louis Murerwa, and myself. You can find a detailed description of our project [here](https://docs.google.com/document/d/1kZSdMcH9f509En9Qli77Okel_RYmngZ6FEx3tCUF_Fg/edit?usp=sharing), but here I will describe just my contributions. Anything marked with ... was worked on by my wonderful teammates!
 
@@ -33,7 +38,7 @@ In addition, we also leveraged datasets from Kaggle’s _Toxic Comment Classific
 
 ## Classical Machine Learning Models
 
-Our first approach to classify our dataset was to employ the use of 3 classical machine learning classifiers: Naive Bayes, Logistic Regression and Random Forest. By default, these classifiers actively support classification for no more than two classes so they can only assign a single label to a piece of text. For example, a sample text like  “louis went home” can be assigned one binary $[0,1]$ label like “toxic.”  To achieve Multi-label classification, we employed the use of the “One vs Rest Classifier” which is a heuristic method for using binary classification algorithms on multi-label classification problems. To enhance the performance of the ML models, we employed data pre-processing techniques such as  the conversion of popular short phrases like "what's" and “cuse" to "what is" and "excuse" which is their un-shortened form. We created two similar sets of training sets, one which was lowered and the other one which is unlowered and we also removed stopwords to save up valuable processing time and focus on important word keys. Lastly we employed the use of the CountVectorizer and the TF-IDF Vectorizer to fine tune our predictions.
+Our first approach to classify our dataset was to employ the use of 3 classical machine learning classifiers: Naive Bayes, Logistic Regression and Random Forest. By default, these classifiers actively support classification for no more than two classes so they can only assign a single label to a piece of text. For example, a sample text like  “louis went home” can be assigned one binary a$[0,1]$$ label like “toxic.” To achieve Multi-label classification, we employed the use of the “One vs Rest Classifier” which is a heuristic method for using binary classification algorithms on multi-label classification problems. To enhance the performance of the ML models, we employed data pre-processing techniques such as  the conversion of popular short phrases like "what's" and “cuse" to "what is" and "excuse" which is their un-shortened form. We created two similar sets of training sets, one which was lowered and the other one which is unlowered and we also removed stopwords to save up valuable processing time and focus on important word keys. Lastly we employed the use of the CountVectorizer and the TF-IDF Vectorizer to fine tune our predictions.
 
 ## Deep Learning-based Models
 
@@ -57,31 +62,32 @@ In the following sections, we comment on the classification performance of the v
 
 ### Classical Machine Learning Models
 
-The first step toward discovering the best machine learning model for our toxic tweet dataset was to train all the three potential classic classifiers with multiple features and text pre-processing that would potentially maximize the model performances. We used a combination of 3 classifiers, 2 text pre- processing variations (lowered and unlowered) and 2 Vectorizers (CountVectorizer and TfidfVectorizer). These combinations allowed us to create a total of 12 classifier-feature-vectorizer models from which we picked our best model. The performances of our classic machine learning models varied greatly  depending on the tuning mentioned above but the three best models for each classifier had an average AUC of 0.85 for Naive Bayes, 0.9 for Random Forest and 0.97 for Logistic Regression. The Logistic Regression  classifier in combination with the TfidfVectorizer and the lowered text exceeded our expectations as it rivaled the performance of our best deep learning model, BERT, which had a mean AUC of 0.98. 
+The first step toward discovering the best machine learning model for our toxic tweet dataset was to train all the three potential classic classifiers with multiple features and text pre-processing that would potentially maximize the model performances. We used a combination of 3 classifiers, 2 text pre-processing variations (lowered and unlowered) and 2 Vectorizers (CountVectorizer and TfidfVectorizer). These combinations allowed us to create a total of 12 classifier-feature-vectorizer models from which we picked our best model. The performances of our classic machine learning models varied greatly  depending on the tuning mentioned above but the three best models for each classifier had an average AUC of 0.85 for Naive Bayes, 0.9 for Random Forest and 0.97 for Logistic Regression. The Logistic Regression  classifier in combination with the TfidfVectorizer and the lowered text exceeded our expectations as it rivaled the performance of our best deep learning model, BERT, which had a mean AUC of 0.98. 
+
 Some of the limitations faced in using classical learning models for multi-label classification was that all of these models tend to underperform when there are multiple labels or non-linear boundaries. They take a lot of  processing time and when coupled with multiple features they don't scale very well. Despite these limitations, our Logistic Regression model surpassed expectations and we were impressed by its ability to rival BERT.
 
 ### BERT
 
-We seek to understand the potential token relationships learned by the BERT model that may be predictive of a given comment’s toxicity. We study the attention maps produced for each sample in our dev set. For each dev set sample, we extract 144 attention maps, ie. one from each of BERT’s attention heads. Each attention map is a 2D matrix, where an arbitrary cell $(i, j)$ contains how much (a ratio from 0-1) the $i$th token of a given comment __attends__ to the $j$th token of the comment (where $0 \leq i, j < n+2$). Note: each comment comprises a list of $n$ tokens, but BERT prepends the [CLS] token to the _start_ of the list for classification purposes, and [SEP] token to the end of the list as a sort of no-op,  yielding a total of $n+2$ tokens.
+We seek to understand the potential token relationships learned by the BERT model that may be predictive of a given comment’s toxicity. We study the attention maps produced for each sample in our dev set. For each dev set sample, we extract 144 attention maps, ie. one from each of BERT’s attention heads. Each attention map is a 2D matrix, where an arbitrary cell $$(i, j)$$ contains how much (a ratio from 0-1) the $$i$$th token of a given comment __attends__ to the $$j$$th token of the comment (where $$0 \leq i, j < n+2$$). Note: each comment comprises a list of $$n$$ tokens, but BERT prepends the [CLS] token to the _start_ of the list for classification purposes, and [SEP] token to the end of the list as a sort of no-op,  yielding a total of $$n+2$$ tokens.
 
 To get a sense of which attention heads are most ‘important’ for our multi-label classification task, we apply an approach devised by Michel et al. 2019 that quantifies the importance of each attention head as the sensitivity of the model to the attention head’s being masked. This requires a single backward and forward pass of the model over the dev set, and accumulation of gradients of the loss function. This yields head importance scores as shown below, revealing that the majority of attention heads can even be pruned:
 
 ![](/assets/images/cs_89.21_image_1.png)
 *Figure 1: Attention Head Importance Scores*
 
-Due to time constraints, we limit our examination to just one of interesting heads: $(10, 7)$. It appears to have the (global) maximum importance score across all attention heads. We may benefit from a closer look at the relationships learned by this particular head. 
+Due to time constraints, we limit our examination to just one of interesting heads: $$(10, 7)$$. It appears to have the (global) maximum importance score across all attention heads. We may benefit from a closer look at the relationships learned by this particular head. 
 
-Below we show attention maps at head $(10, 7)$ for two particular dev set examples, where it appears that attention is generally given to tokens that are most indicative of a comment’s tone. This occasionally yields vertical stripe patterns over tokens that are critical to our perception of the given comment:
+Below we show attention maps at head $$(10, 7)$$ for two particular dev set examples, where it appears that attention is generally given to tokens that are most indicative of a comment’s tone. This occasionally yields vertical stripe patterns over tokens that are critical to our perception of the given comment:
 
 ![](/assets/images/cs_89.21_image_2.png)
-*Attention Map at Head $(10, 7)$ for Random Test Set Sample 1*
+*Attention Map at Head $$(10, 7)$$ for Random Test Set Sample 1*
 
 In the mapping shown above, notice how tokens/phrases given attention to include ‘Thanks’, ‘good job’, ‘brilliant’, as well as punctuation. It seems as though the positive praise given by the comment’s author to the intended reader is being identified by the attention head. The apparent attention given to punctuation is harder to interpret as BERT may be more finicky with punctuation.
 
 In contrast, the mapping shown below is for a comment exhibiting a relatively more complex tone to decipher; tokens that are heavily attended to include ‘sorry,’ potentially capturing the author’s initial apologetic tone, as well as ‘idiot’ (ie. the root of the word ‘idiotic’), pertaining to the author’s eventual harsh criticism of a supposed editor. This makes some intuitive sense, as both tokens play pivotal roles in embodying how the author’s voice comes across; perhaps comments that sound more aggressive are more often toxic. We believe that such attention maps produced by the BERT model indicate the immense promise of deep learning-based approaches in conducting semantic analysis on text, even with very minimal fine-tuning.
 
 ![](/assets/images/cs_89.21_image_3.png)
-*Attention Map at Head $(10, 7)$ for Random Test Set Sample 2*
+*Attention Map at Head $$(10, 7)$$ for Random Test Set Sample 2*
 
 ## Text Style Transfer
 

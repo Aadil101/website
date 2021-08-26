@@ -5,6 +5,7 @@ date: 13 March 2018
 author_profile: true
 share: false
 categories: writing
+show_date: true
 ---
 
 This is my final paper for *WRIT 5 The Pursuit of Happiness* with Professor Deanne Harper:

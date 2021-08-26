@@ -5,6 +5,7 @@ date: 17 March 2021
 author_profile: true
 share: false
 categories: writing
+show_date: true
 ---
 
 This is my final paper for *MES 16.07 Arabian Nights East and West* with Professor Hussein Kadhim:

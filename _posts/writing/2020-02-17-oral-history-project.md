@@ -5,6 +5,7 @@ date: 17 February 2020
 author_profile: true
 share: false
 categories: writing
+show_date: true
 ---
 
 This is a project in which I interviewed my aunt regarding a memorable experience of hers. I then discuss my experiences with interviewing someone for the first time, within the context of indigenous oral history traditions. This is for *NAS 22 Native American Lives* with Professor Vera Palmer:

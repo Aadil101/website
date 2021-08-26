@@ -5,6 +5,7 @@ date: 13 November 2018
 author_profile: true
 share: false
 categories: writing
+show_date: true
 ---
 
 This is my final paper for *REL 19.19 Religion and Technology* with Professor Jeremy Sabella:
