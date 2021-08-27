@@ -14,6 +14,10 @@ show_date: true
 
 This is my team's final project for *COSC 89.21 Data Mining and Knowledge* with Professor Soroush Vosoughi. Our team consisted of Yakoob Khan, Luca C. L. Lit, Louis Murerwa, and myself. You can find a detailed description of our project [here](https://docs.google.com/document/d/1kZSdMcH9f509En9Qli77Okel_RYmngZ6FEx3tCUF_Fg/edit?usp=sharing), but here I will describe just my contributions. Anything marked with ... was worked on by my wonderful teammates!
 
+## GitHub
+
+You can find all of our code right [here](https://github.com/Yakoob-Khan/Toxic-Comment-Classification-Challenge.git).
+
 ## Abstract
 
 In this work, we propose a three-part system that automatically extracts controversial online posts, classifies toxic comments into 6 different categories, and neutralizes the offensive language contained in such comments. Our Extractor module leverages the Twitter API to obtain recent posts from Twitter regarding anti-Asian rhetoric related to the COVID-19 pandemic. Our Classifier Module, trained using Jigsaw’s Toxic Comment Classification dataset, is then used to filter posts that are likely to contain toxicity. We explore a variety of classical machine learning models and BERT to identify an accurate hate speech classifier. Finally, our Neutralizer module performs linguistic style transfer by removing the toxic words contained in the filtered posts while still preserving the underlying content. As each of the three modules are independent of each other, our proposed pipeline is generalizable to automatically extract data from other sources (e.g Reddit), classify and neutralize toxicity using other techniques by replacing the appropriate sub-module. 
