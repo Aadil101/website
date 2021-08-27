@@ -72,28 +72,22 @@ We seek to understand the potential token relationships learned by the BERT mode
 
 To get a sense of which attention heads are most ‘important’ for our multi-label classification task, we apply an approach devised by Michel et al. 2019 that quantifies the importance of each attention head as the sensitivity of the model to the attention head’s being masked. This requires a single backward and forward pass of the model over the dev set, and accumulation of gradients of the loss function. This yields head importance scores as shown below, revealing that the majority of attention heads can even be pruned:
 
-<figure class="image">
-	<img src="https://aadil101.github.io/website/assets/images/cs_89.21_image_1.png">
-	<figcaption>Figure 1: Attention Head Importance Scores</figcaption>
-</figure>
+![](https://aadil101.github.io/website/assets/images/cs_89.21_image_1.png)
+*Figure 1: Attention Head Importance Scores*
 
 Due to time constraints, we limit our examination to just one of interesting heads: $$(10, 7)$$. It appears to have the (global) maximum importance score across all attention heads. We may benefit from a closer look at the relationships learned by this particular head. 
 
 Below we show attention maps at head $$(10, 7)$$ for two particular dev set examples, where it appears that attention is generally given to tokens that are most indicative of a comment’s tone. This occasionally yields vertical stripe patterns over tokens that are critical to our perception of the given comment:
 
-<figure class="image">
-	<img src="https://aadil101.github.io/website/assets/images/cs_89.21_image_2.png">
-	<figcaption>Figure 2: Attention Map at Head $$(10, 7)$$ for Random Test Set Sample 1</figcaption>
-</figure>
+![](https://aadil101.github.io/website/assets/images/cs_89.21_image_2.png)
+*Figure 2: Attention Map at Head $$(10, 7)$$ for Random Test Set Sample 1*
 
 In the mapping shown above, notice how tokens/phrases given attention to include ‘Thanks’, ‘good job’, ‘brilliant’, as well as punctuation. It seems as though the positive praise given by the comment’s author to the intended reader is being identified by the attention head. The apparent attention given to punctuation is harder to interpret as BERT may be more finicky with punctuation.
 
 In contrast, the mapping shown below is for a comment exhibiting a relatively more complex tone to decipher; tokens that are heavily attended to include ‘sorry,’ potentially capturing the author’s initial apologetic tone, as well as ‘idiot’ (ie. the root of the word ‘idiotic’), pertaining to the author’s eventual harsh criticism of a supposed editor. This makes some intuitive sense, as both tokens play pivotal roles in embodying how the author’s voice comes across; perhaps comments that sound more aggressive are more often toxic. We believe that such attention maps produced by the BERT model indicate the immense promise of deep learning-based approaches in conducting semantic analysis on text, even with very minimal fine-tuning.
 
-<figure class="image">
-	<img src="https://aadil101.github.io/website/assets/images/cs_89.21_image_3.png">
-	<figcaption>Attention Map at Head $$(10, 7)$$ for Random Test Set Sample 2</figcaption>
-</figure>
+![](https://aadil101.github.io/website/assets/images/cs_89.21_image_3.png)
+*Attention Map at Head $$(10, 7)$$ for Random Test Set Sample 2*
 
 ## Text Style Transfer
 

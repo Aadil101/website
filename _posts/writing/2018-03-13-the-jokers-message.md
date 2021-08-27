@@ -32,15 +32,11 @@ People can desire more than just maximum utility and minimum pain in their lives
 
 Two ferries, one carrying civilians and the other transferring criminals, discover that each has a bomb onboard and possesses the detonator for the other ferry. The Joker informs each ship that saving itself requires destroying the other, warning that both would be destroyed should neither choose to detonate by midnight. This experiment tests how obsessed humans are about their personal well-being, as the Joker hopes to show that they are willing to forgo the happiness of others. In contrast, virtuous individuals consider the lives of others as valuable as their own and would lean towards avoiding detonation. Both civilian and criminal groups have mixed opinions on how to proceed. This predicament is known as a _prisoners' dilemma_, a concept formalized by Mathematicians Merril M. Flood and Melvin Dresher that deals with two parties, each of which must maximize his or her payoff without knowledge about the other's choice (De Herdt 185). Below, Table 1 and 2 each display payoffs for four different scenarios. In Table 1, each ferry prefers detonation because it yields a chance at survival; there is a survival case for each ferry, both labeled \*. Table 2 considers when each ferry prefers doing nothing, acknowledging that people do not have the right to hurt others; there is an equilibrium case labeled \*\*. In the film, both ferries remarkably settle on avoiding detonation (scenario \*\* in Table 2), and it takes Batman's eleventh-hour heroics to prevent the Joker from triggering both bombs. We see that the people of Gotham contemplate whether they should save themselves but feel guilty for desiring to take the lives of others. They defy the Joker's beliefs, suggesting that an individual can desire more than personal happiness, even if it means risking his or her life just to spare others from immediate harm.
 
-<figure class="image">
-	<img src="https://aadil101.github.io/website/assets/images/writ_5_table_1.png">
-	<figcaption>Table 1: Prisoner's Dilemma – Ferry Scene – Survival Outweighs Virtue</figcaption>
-</figure>
+![](https://aadil101.github.io/website/assets/images/writ_5_table_1.png)
+*Table 1: Prisoner's Dilemma – Ferry Scene – Survival Outweighs Virtue*
 
-<figure class="image">
-	<img src="https://aadil101.github.io/website//assets/images/writ_5_table_2.png">
-	<figcaption>Table 2: Prisoner's Dilemma – Ferry Scene – Virtue Outweighs Survival</figcaption>
-</figure>
+![](https://aadil101.github.io/website/assets/images/writ_5_table_2.png)
+*Table 2: Prisoner's Dilemma – Ferry Scene – Virtue Outweighs Survival*
 
 The more people who have virtue, the happier society should collectively be overall. Shidehara Oishi and Ulrich Schimmack, professors in psychology at the University of Virginia and the University of Toronto, find in their paper &quot;Culture and Well-Being&quot; a significantly positive association between social support and reported life satisfaction of nations, based on regression analysis on data from a 131-nation Gallup World Poll (Oishi &amp; Schimmack). This suggests that as we perceive care from others around us, the righteous deeds of peers and strangers for our own well-being, society collectively feels better. The opportunity costs for the virtuous giver are time and energy less spent on satisfying themselves. We see hope in ailing cities like Gotham as people have shown potential to care for one another, so perhaps the Joker's anarchy may not be the appropriate measure to run society by. Nolan uses Batman to give Gotham's susceptible civilians and punished criminals another chance at existence, for them to realize that virtue is desirable and worth giving up their self-pursuing drives for because it intrinsically feels just.
 
