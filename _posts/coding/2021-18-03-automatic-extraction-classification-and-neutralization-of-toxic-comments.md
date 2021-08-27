@@ -8,11 +8,11 @@ categories: coding
 show_date: true
 ---
 
+This is my team's final project for *COSC 89.21 Data Mining and Knowledge* with Professor Soroush Vosoughi. Our team consisted of Yakoob Khan, Luca C. L. Lit, Louis Murerwa, and myself. You can find a detailed description of our project [here](https://docs.google.com/document/d/1kZSdMcH9f509En9Qli77Okel_RYmngZ6FEx3tCUF_Fg/edit?usp=sharing), but here I will describe just my contributions. Anything marked with ... was worked on by my wonderful teammates!
+
 <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
-
-This is my team's final project for *COSC 89.21 Data Mining and Knowledge* with Professor Soroush Vosoughi. Our team consisted of Yakoob Khan, Luca C. L. Lit, Louis Murerwa, and myself. You can find a detailed description of our project [here](https://docs.google.com/document/d/1kZSdMcH9f509En9Qli77Okel_RYmngZ6FEx3tCUF_Fg/edit?usp=sharing), but here I will describe just my contributions. Anything marked with ... was worked on by my wonderful teammates!
 
 ## GitHub
 

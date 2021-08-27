@@ -8,11 +8,7 @@ categories: coding
 show_date: true
 ---
 
-<script type="text/javascript" async
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
-This is my Undergraduate Honors Thesis for the major in Computer Science at Dartmouth College. This research was conducted under the invaluable mentorship of Master's student Weicheng Ma and direction of Professor Soroush Vosoughi, who made this journey into natural language processing, into what potentially makes language difficult to understand, possible 😊
+This is my Undergraduate Honors Thesis for the major in Computer Science at Dartmouth College. This research was conducted under the invaluable mentorship of Master's student Weicheng Ma and direction of Professor Soroush Vosoughi, who made this journey into natural language processing, into what potentially makes language difficult to understand, possible.
 
 Unfortunately, my entire work won't render properly on this webpage as it was written in LaTeX...
 
