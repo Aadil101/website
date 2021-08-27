@@ -48,13 +48,7 @@ Having seen LSTM-based approaches being used in past works to model, say, senten
 
 ## Results
 
-|                     |                                                                                                __Model Performances on Test Set__ |              |
-|---------------------|----------------------------------------------------------------------------------------------------------------------------------:|-------------:|
-| __Model__           |                                                                                                                __Label: ROC-AUC__ | __Mean AUC__ |
-| Naive Bayes         |                         toxic: 0.89<br>severe_toxic: 0.82<br>obscene: 0.88<br>threat: 0.80<br>insult: 0.86<br>identity_hate: 0.83 |         0.85 |
-| Random Forest       |                         toxic: 0.94<br>severe_toxic: 0.86<br>obscene: 0.95<br>threat: 0.82<br>insult: 0.94<br>identity_hate: 0.87 |         0.89 |
-| Logistic Regression |                     toxic: 0.96<br>severe_toxic: 0.98<br>obscene: 0.97<br>threat: 0.98<br>insult: 0.96<br>identity_hate: __0.98__ |         0.97 |
-| BERT                | toxic: __0.97__<br>severe_toxic: __0.99__<br>obscene: __0.98__<br>threat: __0.99__<br>insult: __0.98__<br>identity_hate: __0.98__ |         0.98 |
+![](https://aadil101.github.io/website/assets/images/cs_89.21_image_0.png)
 
 ## Analysis
 
