@@ -80,7 +80,7 @@ Due to time constraints, we limit our examination to just one of interesting hea
 Below we show attention maps at head $$(10, 7)$$ for two particular dev set examples, where it appears that attention is generally given to tokens that are most indicative of a comment’s tone. This occasionally yields vertical stripe patterns over tokens that are critical to our perception of the given comment:
 
 ![](/assets/images/cs_89.21_image_2.png)
-*Attention Map at Head $$(10, 7)$$ for Random Test Set Sample 1*
+*Figure 2: Attention Map at Head $$(10, 7)$$ for Random Test Set Sample 1*
 
 In the mapping shown above, notice how tokens/phrases given attention to include ‘Thanks’, ‘good job’, ‘brilliant’, as well as punctuation. It seems as though the positive praise given by the comment’s author to the intended reader is being identified by the attention head. The apparent attention given to punctuation is harder to interpret as BERT may be more finicky with punctuation.
 
