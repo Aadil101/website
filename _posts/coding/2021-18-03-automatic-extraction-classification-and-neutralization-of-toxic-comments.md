@@ -8,7 +8,7 @@ categories: coding
 show_date: true
 ---
 
-This is my team's final project for *COSC 89.21 Data Mining and Knowledge* with Professor Soroush Vosoughi. Our team consisted of Yakoob Khan, Luca C. L. Lit, Louis Murerwa, and myself. You can find a detailed description of our project [here](https://docs.google.com/document/d/1kZSdMcH9f509En9Qli77Okel_RYmngZ6FEx3tCUF_Fg/edit?usp=sharing), but here I will describe just my contributions. Anything marked with ... was worked on by my wonderful teammates!
+This is my team's final project for *COSC 89.21 Data Mining and Knowledge* with Professor Soroush Vosoughi. Our team consisted of Yakoob Khan, Luca C. L. Lit, Louis Murerwa, and myself. You can find a detailed description of our project [here](https://docs.google.com/document/d/1kZSdMcH9f509En9Qli77Okel_RYmngZ6FEx3tCUF_Fg/edit?usp=sharing), as below I will describe mostly just my contributions. Anything marked with ... was worked on by my wonderful teammates, whereas anything labeled ✅ refers to a contribution of mine.
 
 <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
@@ -20,15 +20,15 @@ You can find all of our code right [here](https://github.com/Yakoob-Khan/Toxic-C
 
 ## Abstract
 
-In this work, we propose a three-part system that automatically extracts controversial online posts, classifies toxic comments into 6 different categories, and neutralizes the offensive language contained in such comments. Our Extractor module leverages the Twitter API to obtain recent posts from Twitter regarding anti-Asian rhetoric related to the COVID-19 pandemic. Our Classifier Module, trained using Jigsaw’s Toxic Comment Classification dataset, is then used to filter posts that are likely to contain toxicity. We explore a variety of classical machine learning models and BERT to identify an accurate hate speech classifier. Finally, our Neutralizer module performs linguistic style transfer by removing the toxic words contained in the filtered posts while still preserving the underlying content. As each of the three modules are independent of each other, our proposed pipeline is generalizable to automatically extract data from other sources (e.g Reddit), classify and neutralize toxicity using other techniques by replacing the appropriate sub-module. 
+In this work, we propose a three-part system that automatically extracts controversial online posts, classifies toxic comments into 6 different categories, and neutralizes the offensive language contained in such comments. Our _Extractor_ module leverages the Twitter API to obtain recent posts from Twitter regarding anti-Asian rhetoric related to the COVID-19 pandemic. Our _Classifier_ Module, trained using Jigsaw’s Toxic Comment Classification dataset, is then used to filter posts that are likely to contain toxicity. We explore a variety of classical machine learning models and BERT to identify an accurate hate speech classifier. Finally, our _Neutralizer_ module performs linguistic style transfer by removing the toxic words contained in the filtered posts while still preserving the underlying content. As each of the three modules are independent of each other, our proposed pipeline is generalizable to automatically extract data from other sources (e.g Reddit), classify and neutralize toxicity using other techniques by replacing the appropriate sub-module. 
 
 ## Introduction
 
-...
+The rise of social media platforms has transformed the way individuals communicate today. While offering numerous benefits, the anonymous nature of such mediums empowers bad actors to promulgate toxic comments that go against the principles of civilized discourse. Being able to automatically detect offensive posts is crucial to ensuring that social media remains healthy and inclusive for all. To assist in this effort, our work proposes a three-part system that automatically extracts comments from an online platform, accurately classifies the posts to filter toxic comments, and finally neutralizes the offensive language. Given the nature of this work, we caution readers that the examples used in this work contain offensive language and reader discretion is advised.
 
 ## Related Work
 
-...
+There has been extensive work in the study of hate speech detection in the literature. Numerous offensive language datasets (Wulczyn et. al., 2017) with various toxic taxonomies have been created to assist the training of robust computational models for detecting offensive language. Competitions on hate speech detection (Zampieri et. al, 2020), such as the Kaggle Toxic Comments Classification Challenge on which this work is based,  have further attraction to this topic. While a lot of attention has been placed on the classification of toxic comments, neutralizing offensive language through text style transfer (Hu et. al, 2020) have been relatively under-studied. 
 
 ## Data Scraping
 
@@ -40,21 +40,21 @@ In addition, we also leveraged datasets from Kaggle’s _Toxic Comment Classific
 
 ...
 
-## Classical Machine Learning Models
+## Classical Machine Learning Models ✅
 
 Our first approach to classify our dataset was to employ the use of 3 classical machine learning classifiers: Naive Bayes, Logistic Regression and Random Forest. By default, these classifiers actively support classification for no more than two classes so they can only assign a single label to a piece of text. For example, a sample text like  “louis went home” can be assigned one binary a$[0,1]$$ label like “toxic.” To achieve Multi-label classification, we employed the use of the “One vs Rest Classifier” which is a heuristic method for using binary classification algorithms on multi-label classification problems. To enhance the performance of the ML models, we employed data pre-processing techniques such as  the conversion of popular short phrases like "what's" and “cuse" to "what is" and "excuse" which is their un-shortened form. We created two similar sets of training sets, one which was lowered and the other one which is unlowered and we also removed stopwords to save up valuable processing time and focus on important word keys. Lastly we employed the use of the CountVectorizer and the TF-IDF Vectorizer to fine tune our predictions.
 
-## Deep Learning-based Models
+## Deep Learning-based Models ✅
 
 Alongside our aforementioned classical machine learning-based models, we also try an end-to-end, feature learning-based approach that bypasses having to tediously construct a feature set by hand.
 
 Having seen LSTM-based approaches being used in past works to model, say, sentences for the task of complex word identification (Hartmann and dos Santos, 2018; De Hertog and Tack, 2018), we were tempted to implement such an approach. An issue with an LSTM is its ability to read tokens of an input sentence sequentially in a single direction. This inspired us to instead try a Transformer-based approach (Vaswani et al., 2017), architectures that process sentences as a whole (not word-by-word) through the use of _attention_ mechanisms. Attention weights can be interpreted as learned relationships between words. BERT (Devlin et al., 2018) is one such model used for a variety of natural language understanding tasks. We harnessed HuggingFace’s Transformers library to fine-tune  a pre-trained BERT base model. 
 
-## Results
+## Results ✅
 
 ![](https://aadil101.github.io/website/assets/images/cs_89.21_image_0.png)
 
-## Analysis
+## Analysis ✅
 
 In the following sections, we comment on the classification performance of the various models we experimented with for toxic comment detection. 
 
@@ -107,10 +107,12 @@ Nathan Hartmann and Leandro Borges dos Santos. 2018. NILC at CWI 2018: Exploring
 
 Dirk De Hertog and Anaïs Tack. 2018. Deep learning architecture for complex word identification. In _Proceedings of the Thirteenth Workshop on Innovative Use of NLP for Building Educational Applications_, pages 328–334, New Orleans, Louisiana. Association for Computational Linguistics.
 
-...
+Zhiqiang Hu, Roy Ka-Wei Lee, and Charu C. Aggarwal. 2020. Text Style Transfer: A Review and Experimental Evaluation. https://arxiv.org/pdf/2010.12742.pdf
 
 Paul Michel and Omer Levy and Graham Neubig, . "Are Sixteen Heads Really Better than One?". _CoRR_, abs/1905.10650. (2019). 
 
 Ashish Vaswani,  Noam Shazeer,  Niki Parmar,  Jakob Uszkoreit, Llion Jones, Aidan N.Gomez, Lukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. _CoRR_, abs/1706.03762.
 
-...
+Ellery Wulczyn,  Nithum Thain, and Lucas Dixon. 2017. Ex machina: Personal attacks seen at scale. In Proceedings of the 26th International Conference on World Wide Web, WWW ’17, page 1391–1399, Republic and Canton of Geneva, CHE. International World Wide Web Conferences Steering Committee.
+
+Marcos Zampieri, Preslav Nakov, Sara Rosenthal, Pepa Atanasova, Georgi Karadzhov, Hamdy  Mubarak, Leon Derczynski, Zeses Pitenis, and Cagri Coltekin. 2020. SemEval-2020 task 12: Multilingual offensive language identification in social media (OffensEval 2020). In Proceedings of the Fourteenth Workshop on Semantic Evaluation, pages 1425– 1447, Barcelona (online). International Committee for Computational Linguistics.

@@ -5,7 +5,7 @@ title: "Coding"
 author_profile: true
 ---
 
-Here, you can check out some of my research interests and personal projects.
+Here, you can learn about some of my research interests and personal projects 📚 You'll probably notice a bunch of natural language processing tasks scattered about here, which is a field in AI/ML that I'm especially passionate about!
 
 <ul class="taxonomy__index">
   {% assign postsInYear = site.categories.coding | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date | date: "%Y"' %}
