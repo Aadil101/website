@@ -30,7 +30,7 @@ qqnorm(rStuRes, main="Normal Probability Plot (residuals on vertical axis)")
 qqline(rStuRes)
 ```
 
-![](https://github.com/Aadil101/outlier-detection-practice/tree/master/README_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/outlier-detection-practice/master/README_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
 
 However, note that the book uses residuals on the *x*-axis instead of *y*-axis. In order to obtain that use the parameter datax as shown below. In the below graph *x*-axis denotes the R-student residuals and the *y*-axis is the theoretical quantiles ( in the book *y*-axis is probability instead of quantiles).
 
@@ -40,7 +40,7 @@ qqnorm(rStuRes, datax = TRUE ,
 qqline(rStuRes)
 ```
 
-![](https://github.com/Aadil101/outlier-detection-practice/tree/master/README_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/outlier-detection-practice/master/README_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
 
 ### Residual vs predicted response plot
 
@@ -50,7 +50,7 @@ plot (yHat, rStuRes)
 abline(0,0)
 ```
 
-![](https://github.com/Aadil101/outlier-detection-practice/tree/master/README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/outlier-detection-practice/master/README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 
 After observing that the observation points 5 and 6 look like potential outliers, next we delete those points and compare the fitted model of the deleted data with the full data.
 
@@ -68,7 +68,7 @@ fitted2 = lm(shearSRem ~ ageRem)
 abline(fitted2$coef, lwd = 2, col = "red")
 ```
 
-![](https://github.com/Aadil101/outlier-detection-practice/tree/master/README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/outlier-detection-practice/master/README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
 ### A note
 
@@ -148,14 +148,14 @@ qqnorm(rStuRes,main="Normal Probability Plot (residuals on y-axis)")
 qqline(rStuRes)
 ```
 
-![](https://github.com/Aadil101/outlier-detection-practice/tree/master/README_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/outlier-detection-practice/master/README_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
 
 ``` r
 qqnorm(rStuRes, datax = TRUE, main="Normal Probability Plot")
 qqline(rStuRes, datax = TRUE)
 ```
 
-![](https://github.com/Aadil101/outlier-detection-practice/tree/master/README_files/figure-gfm/unnamed-chunk-6-2.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/outlier-detection-practice/master/README_files/figure-gfm/unnamed-chunk-6-2.png)<!-- -->
 
 Most r-student residuals stay close to the line, therefore the normality assumption seems to be in check.
 
@@ -166,7 +166,7 @@ plot (predict(fitted), rStuRes, main = "Residuals vs. Predicted Response")
 abline(0,0)
 ```
 
-![](https://github.com/Aadil101/outlier-detection-practice/tree/master/README_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/outlier-detection-practice/master/README_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
 
 Residuals are contained within horizontal bands, therefore roughly constant variance. No apparent problems in model.
 
@@ -177,7 +177,7 @@ plot (x2, rStuRes, main = "Residuals vs. Team Passing Yardage (x2)")
 abline(0,0)
 ```
 
-![](https://github.com/Aadil101/outlier-detection-practice/tree/master/README_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/outlier-detection-practice/master/README_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
 
 A structure appears in the graph (upward trend in r-student residuals as
 *x*<sub>2</sub> increases), therefore the model would be improved by adding *x*<sub>2</sub> as a
@@ -220,14 +220,14 @@ qqnorm(rStuRes, main="Normal Probability Plot (residuals on y-axis)")
 qqline(rStuRes)
 ```
 
-![](https://github.com/Aadil101/outlier-detection-practice/tree/master/README_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/outlier-detection-practice/master/README_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
 
 ``` r
 qqnorm(rStuRes, datax = TRUE, main="Normal Probability Plot")
 qqline(rStuRes, datax = TRUE)
 ```
 
-![](https://github.com/Aadil101/outlier-detection-practice/tree/master/README_files/figure-gfm/unnamed-chunk-9-2.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/outlier-detection-practice/master/README_files/figure-gfm/unnamed-chunk-9-2.png)<!-- -->
 
 Plot does not follow the line well particularly for near-zero residuals, there is a minor problem with the normality assumption.
 
@@ -238,7 +238,7 @@ plot (predict(fitted), rStuRes, main="Residuals vs. Predicted Response")
 abline(0,0)
 ```
 
-![](https://github.com/Aadil101/outlier-detection-practice/tree/master/README_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/outlier-detection-practice/master/README_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
 
 The residuals are contained within horizontal bands, there is roughly constant variance in the data.
 
@@ -249,21 +249,21 @@ plot (x2, rStuRes, main="Residuals vs. x2")
 abline(0,0)
 ```
 
-![](https://github.com/Aadil101/outlier-detection-practice/tree/master/README_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/outlier-detection-practice/master/README_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
 
 ``` r
 plot (x7, rStuRes, main="Residuals vs. x7")
 abline(0,0)
 ```
 
-![](https://github.com/Aadil101/outlier-detection-practice/tree/master/README_files/figure-gfm/unnamed-chunk-11-2.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/outlier-detection-practice/master/README_files/figure-gfm/unnamed-chunk-11-2.png)<!-- -->
 
 ``` r
 plot (x8, rStuRes, main="Residuals vs. x8")
 abline(0,0)
 ```
 
-![](https://github.com/Aadil101/outlier-detection-practice/tree/master/README_files/figure-gfm/unnamed-chunk-11-3.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/outlier-detection-practice/master/README_files/figure-gfm/unnamed-chunk-11-3.png)<!-- -->
 
 There appears to be a structure in the residuals *x*<sub>7</sub> plot, implying non-constant variance and that the relationship between *y* and *x*<sub>7</sub> is
 nonlinear. Therefore regressor *x*<sub>7</sub> is not correctly specified. However the other two plots, for *x*<sub>2</sub> and *x*<sub>8</sub>, do not exhibit as obvious of structures, implying constant variance and that the relationships between *y* and each regressor are linear. So regressors *x*<sub>2</sub> and *x*<sub>8</sub> should be correctly specified. Note: We are a little less certain with
@@ -281,7 +281,7 @@ ei_x2_given_x7_x8 = x2 - yHat
 plot(ei_x2_given_x7_x8, ei_y_given_x2, main="Marginal Role for x2")
 ```
 
-![](https://github.com/Aadil101/outlier-detection-practice/tree/master/README_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/outlier-detection-practice/master/README_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
 
 ``` r
 fitted = lm(y ~ x2 + x8)
@@ -293,7 +293,7 @@ ei_x7_given_x2_x8 = x7 - yHat
 plot(ei_x7_given_x2_x8, ei_y_given_x7, main="Marginal Role for x7")
 ```
 
-![](https://github.com/Aadil101/outlier-detection-practice/tree/master/README_files/figure-gfm/unnamed-chunk-12-2.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/outlier-detection-practice/master/README_files/figure-gfm/unnamed-chunk-12-2.png)<!-- -->
 
 ``` r
 fitted = lm(y ~ x2 + x7)
@@ -305,7 +305,7 @@ ei_x8_given_x2_x7 = x8 - yHat
 plot(ei_x8_given_x2_x7, ei_y_given_x8, main="Marginal Role for x8")
 ```
 
-![](https://github.com/Aadil101/outlier-detection-practice/tree/master/README_files/figure-gfm/unnamed-chunk-12-3.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/outlier-detection-practice/master/README_files/figure-gfm/unnamed-chunk-12-3.png)<!-- -->
 
 The partial residuals for *x*<sub>2</sub> and *x*<sub>8</sub> seem to follow upward sloped and downward sloped lines, respectively. Therefore *x*<sub>2</sub> and *x*<sub>8</sub> enter the model linearly. The partial residuals for *x*<sub>7</sub> do not follow any such pattern, therefore there isn’t an identifiable linear relationship between it and response. These results support our conclusions from part (c) on which regressors likely relate linearly to response (*x*<sub>2</sub> and certainly *x*<sub>8</sub>) and which do not (*x*<sub>7</sub>).
 
@@ -366,21 +366,21 @@ qqnorm(rStuRes, main="Normal Probability Plot (residuals on y-axis)")
 qqline(rStuRes)
 ```
 
-![](https://github.com/Aadil101/outlier-detection-practice/tree/master/README_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/outlier-detection-practice/master/README_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
 
 ``` r
 qqnorm(rStuRes, datax = TRUE, main="Normal Probability Plot")
 qqline(rStuRes, datax = TRUE )
 ```
 
-![](https://github.com/Aadil101/outlier-detection-practice/tree/master/README_files/figure-gfm/unnamed-chunk-15-2.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/outlier-detection-practice/master/README_files/figure-gfm/unnamed-chunk-15-2.png)<!-- -->
 
 ``` r
 plot (predict(fitted), rStuRes, main="Residuals vs. Predicted Response")
 abline(0,0)
 ```
 
-![](https://github.com/Aadil101/outlier-detection-practice/tree/master/README_files/figure-gfm/unnamed-chunk-15-3.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/outlier-detection-practice/master/README_files/figure-gfm/unnamed-chunk-15-3.png)<!-- -->
 
 Based on the Normal Probability plot, the normality assumption is in check because the majority of the r-student residuals follow a straight linear trend. Based on the Residuals vs. Predicted Response plot, there is a pattern that is nonlinear, indicating other regressor variables/transformations on regressors may be necessary for the model.
 
@@ -423,21 +423,21 @@ qqnorm(rStuRes, main="Normal Probability Plot w/out Outlier (residuals on y-axis
 qqline(rStuRes)
 ```
 
-![](https://github.com/Aadil101/outlier-detection-practice/tree/master/README_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/outlier-detection-practice/master/README_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
 
 ``` r
 qqnorm(rStuRes, datax = TRUE, main="Normal Probability Plot w/out Outlier") 
 qqline(rStuRes, datax = TRUE )
 ```
 
-![](https://github.com/Aadil101/outlier-detection-practice/tree/master/README_files/figure-gfm/unnamed-chunk-17-2.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/outlier-detection-practice/master/README_files/figure-gfm/unnamed-chunk-17-2.png)<!-- -->
 
 ``` r
 plot (predict(new_fitted), rStuRes, main="Residuals vs. Predicted Response w/out Outlier")
 abline(0,0)
 ```
 
-![](https://github.com/Aadil101/outlier-detection-practice/tree/master/README_files/figure-gfm/unnamed-chunk-17-3.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/outlier-detection-practice/master/README_files/figure-gfm/unnamed-chunk-17-3.png)<!-- -->
 
 ``` r
 fitted_MS_res = sum((y-predict(fitted))^2)/(n-(m+1))

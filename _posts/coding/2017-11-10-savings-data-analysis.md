@@ -385,7 +385,7 @@ qqnorm(rStuRes, datax = TRUE, main="Normal Probability Plot")
 qqline(rStuRes, datax = TRUE)
 ```
 
-![](https://github.com/Aadil101/savings-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/savings-data-analysis/master/README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
 ``` r
 yNew = y[-4]
@@ -404,6 +404,6 @@ qqnorm(rStuRes, datax = TRUE, main="Normal Probability Plot w/out Influential Po
 qqline(rStuRes, datax = TRUE)
 ```
 
-![](https://github.com/Aadil101/savings-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-4-2.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/savings-data-analysis/master/README_files/figure-gfm/unnamed-chunk-4-2.png)<!-- -->
 
 Initially the normality assumption is moderately fulfilled as most of the points follow the line in the Normal Probability Plot, however there is clearly an outlier to the left of the data. Upon removal of the influential points from part (d), the normality assumption is even better fulfilled and it is safer to conclude that the assumption has been met.

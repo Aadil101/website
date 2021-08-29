@@ -14,7 +14,7 @@ This is a homework assignment from Math 50 at Dartmouth College.
 
 -   Is maximum-likelihood estimator *σ̃*<sup>2</sup> of *σ*<sup>2</sup> an unbiased estimator ? Verify your answer. Comment on the change of the value of *E*(*σ̃*<sup>2</sup>) − *σ*<sup>2</sup> as *n* goes to infinity.
 
-![](https://github.com/Aadil101/plankton-data-analysis/tree/master/README_files/Q1.png)
+![](https://raw.githubusercontent.com/Aadil101/plankton-data-analysis/master/README_files/Q1.png)
 
 ## Question-2.
 
@@ -35,7 +35,7 @@ pList <- predict(fitted, list(age = ageList), int = "p", level = 0.95)
 matlines(ageList, pList, lty='solid' ,  col = "red")
 ```
 
-![](https://github.com/Aadil101/plankton-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/plankton-data-analysis/master/README_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
 
 ``` r
 shTest <- shearS^5 
@@ -44,7 +44,7 @@ library(MASS)
 bc = boxcox(shTest ~ age)
 ```
 
-![](https://github.com/Aadil101/plankton-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-1-2.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/plankton-data-analysis/master/README_files/figure-gfm/unnamed-chunk-1-2.png)<!-- -->
 
 ``` r
 lambda <- bc$x[which.max(bc$y)]
@@ -128,7 +128,7 @@ sc1 <- scatterplot3d(subs2,subs1,pop, pch=17 , type = 'p', angle = 15 , highligh
 sc1$points3d (x2Mesh,x1Mesh, myModel, cex=.02, col="blue")
 ```
 
-![](https://github.com/Aadil101/plankton-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/plankton-data-analysis/master/README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
 ``` r
 # You can also change the view angle to visually test the model 
@@ -137,7 +137,7 @@ sc1 <- scatterplot3d(subs2,subs1,pop, pch=17 , type = 'p', angle = 125 , highlig
 sc1$points3d (x2Mesh,x1Mesh, myModel, cex=.02, col="blue")
 ```
 
-![](https://github.com/Aadil101/plankton-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/plankton-data-analysis/master/README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
 ## Question-3
 
@@ -174,7 +174,7 @@ sc1 <- scatterplot3d(subs2,subs1,pop, pch=17 , type = 'p', angle = 15 , highligh
 sc1$points3d (x2Mesh,x1Mesh, myModel, cex=.02, col="blue")
 ```
 
-![](https://github.com/Aadil101/plankton-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/plankton-data-analysis/master/README_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
 
 ``` r
 yhat = b_hat[1] + b_hat[2]*subs1 + b_hat[3]*subs2
@@ -227,7 +227,7 @@ sc1 <- scatterplot3d(subs2,subs1,pop, pch=17 , type = 'p', angle = 15 , highligh
 sc1$points3d (x2Mesh,x1Mesh, myModel, cex=.02, col="blue")
 ```
 
-![](https://github.com/Aadil101/plankton-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/plankton-data-analysis/master/README_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
 
 ``` r
 yhat = b_hat[1] + b_hat[2]*subs1 + b_hat[3]*subs2 + b_hat[4]*subs1^2 + b_hat[5]*subs2^2 + b_hat[6]*subs1*subs2

@@ -19,7 +19,7 @@ fit <- lm(DC~velocity, data = windmill)
 abline(fit$coefficients, col="red")
 ```
 
-![](https://github.com/Aadil101/windmill-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/windmill-data-analysis/master/README_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
 
 The summary statistics are below, *R*<sup>2</sup> is about 0.87. The residual plot below suggests that the relation might be non-linear. When you look at the above scatter diagram one might think the straight line model seems OK, however the residual plot below amplifies the nonlinearity. Why? Can we also see this by carefully looking at the scatter plot above?
 
@@ -50,7 +50,7 @@ plot(fitted.values(fit), rstudent(fit), xlab = "y", ylab = "R-Student residuals"
 abline(c(0,0), col="red")
 ```
 
-![](https://github.com/Aadil101/windmill-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/windmill-data-analysis/master/README_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
 
 Also note that it looks like that there is a potential outlier and however this might change when we fix the model. It seems consistent with the rest (visually). Start with fitting a quadratic model.
 
@@ -84,7 +84,7 @@ plot(windmill$velocity, windmill$DC, xlab = "wind velocity", ylab = "DC current"
 lines(sort(windmill$velocity), fitted(fit2)[order(windmill$velocity)], col='red') 
 ```
 
-![](https://github.com/Aadil101/windmill-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/windmill-data-analysis/master/README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 
 This seems to fix the curved nature of the data, however the application domain suggests to use a model of the form *y = β<sub>0</sub>+β<sub>1</sub>(1/x)+ε*. Note that there doesn’t seem a potential outlier in the new model.
 
@@ -97,7 +97,7 @@ fit3 <- lm(DC~velRep)
 abline(fit3$coefficients, col="red")
 ```
 
-![](https://github.com/Aadil101/windmill-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/windmill-data-analysis/master/README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
 ``` r
 summary(fit3)
@@ -126,7 +126,7 @@ plot(fitted.values(fit), rstudent(fit3), xlab = "fitted values", ylab = "Student
 abline(c(0,0), col="red")
 ```
 
-![](https://github.com/Aadil101/windmill-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-4-2.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/windmill-data-analysis/master/README_files/figure-gfm/unnamed-chunk-4-2.png)<!-- -->
 
 ## Question-1
 
@@ -153,7 +153,7 @@ fit = lm(pop~subs2,data = data)
 abline(fit$coefficients,col="red")
 ```
 
-![](https://github.com/Aadil101/windmill-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/windmill-data-analysis/master/README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
 ``` r
 summary(fit)
@@ -184,14 +184,14 @@ qqnorm(rStuRes, datax = TRUE, main="Normal Probability Plot")
 qqline(rStuRes, datax = TRUE)
 ```
 
-![](https://github.com/Aadil101/windmill-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-5-2.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/windmill-data-analysis/master/README_files/figure-gfm/unnamed-chunk-5-2.png)<!-- -->
 
 ``` r
 plot(fitted.values(fit), rstudent(fit), xlab = "y", ylab = "R-Student residuals", main = "Population vs. Residual Plot")
 abline(c(0,0), col="red")
 ```
 
-![](https://github.com/Aadil101/windmill-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-5-3.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/windmill-data-analysis/master/README_files/figure-gfm/unnamed-chunk-5-3.png)<!-- -->
 
 ``` r
 SS_res_a = sum((pop - predict(fit))^2)
@@ -211,7 +211,7 @@ library(MASS)
 bc= boxcox(pop ~ subs2Test)
 ```
 
-![](https://github.com/Aadil101/windmill-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/windmill-data-analysis/master/README_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
 
 ``` r
 lambda = bc$x[which.max(bc$y)]
@@ -245,14 +245,14 @@ qqnorm(rStuRes, datax = TRUE, main="Normal Probability Plot for Box-Cox")
 qqline(rStuRes, datax = TRUE)
 ```
 
-![](https://github.com/Aadil101/windmill-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-6-2.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/windmill-data-analysis/master/README_files/figure-gfm/unnamed-chunk-6-2.png)<!-- -->
 
 ``` r
 plot(fitted.values(fit2), rStuRes, xlab = "y", ylab = "R-Student residuals", main = "Population vs. Residual Plot for Box-Cox")
 abline(c(0,0), col="red")
 ```
 
-![](https://github.com/Aadil101/windmill-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-6-3.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/windmill-data-analysis/master/README_files/figure-gfm/unnamed-chunk-6-3.png)<!-- -->
 
 Because in part (a) the normal probability and residuals plots show that the normality assumption and constant variance condition are not met, we should try the Box-Cox method. Box-Cox method yields a transformation with lambda: 2. Such a transformation of the response variable produces a model with *R*<sup>2</sup> and adjusted *R*<sup>2</sup> of 0.266 and 0.261 respectively, which are marginally lower than the *R*<sup>2</sup> values from the straight line model in part (a). This suggests the Box-Cox method did not produce much improvement in modeling the phytoplankton data, even though there is a slight improvement in the normality assumption with the residuals lieing quite close to the line in the new normal probability plot (slightly light-tailed).
 
@@ -269,7 +269,7 @@ fit3 = lm(pop~new_subs2)
 abline(fit3$coefficients, col="red")
 ```
 
-![](https://github.com/Aadil101/windmill-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/windmill-data-analysis/master/README_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
 
 ``` r
 SS_res_c = sum((pop - predict(fit3))^2)
@@ -307,7 +307,7 @@ plot(fitted.values(fit3), rstudent(fit3), xlab = "fitted values", ylab = "Studen
 abline(c(0,0), col="red")
 ```
 
-![](https://github.com/Aadil101/windmill-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-7-2.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/windmill-data-analysis/master/README_files/figure-gfm/unnamed-chunk-7-2.png)<!-- -->
 
 *MS*<sub>res</sub> for the Analyst’s model of 148 is significantly lower than *MS*<sub>res</sub> due to the straight line model, while the *R*<sup>2</sup> and adjusted *R*<sup>2</sup> values of 0.741 and 0.740 respectively are significantly higher for the Analyst’s model. Additionally, residuals for the new model are not quite within horizontal bands (the bands slightly narrow for fitted values near 120), indicating non-constant variance. This means the new model is a better fit to the data, but could be better.
 
@@ -322,7 +322,7 @@ qqnorm(rStuRes, datax = TRUE, main="Normal Probability Plot for Analyst's Model"
 qqline(rStuRes, datax = TRUE)
 ```
 
-![](https://github.com/Aadil101/windmill-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/windmill-data-analysis/master/README_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
 
 Based on the normal probability plot, there appears to be a problem with the normality assumption. The problem can be described as residuals missing the line near the extreme ends but closely following the line near the center.
 
@@ -340,7 +340,7 @@ k = 1
 plot(temp,vap_pres,xlab="Temperature (degrees Kelvin)",ylab="Vapor Pressure (mm Hg)",main="Vapor Pressure vs. Temperature")
 ```
 
-![](https://github.com/Aadil101/windmill-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/windmill-data-analysis/master/README_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
 
 It does not seem likely that a straight-line model will suffice because the slope between successive points seems to increase as temperature increases.
 
@@ -352,7 +352,7 @@ fitted = lm(vap_pres ~ temp)
 abline(fitted$coefficients)
 ```
 
-![](https://github.com/Aadil101/windmill-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/windmill-data-analysis/master/README_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
 
 ``` r
 plot(temp,vap_pres,xlab="Temperature (degrees Kelvin)",ylab="Vapor Pressure (mm Hg)",main="Vapor Pressure vs. Temperature")
@@ -360,7 +360,7 @@ fitted = lm(vap_pres ~ temp)
 abline(fitted$coefficients,col="red")
 ```
 
-![](https://github.com/Aadil101/windmill-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/windmill-data-analysis/master/README_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
 
 ``` r
 summary(fitted)
@@ -391,14 +391,14 @@ qqnorm(rStuRes, datax = TRUE, main="Normal Probability Plot")
 qqline(rStuRes, datax = TRUE)
 ```
 
-![](https://github.com/Aadil101/windmill-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-11-2.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/windmill-data-analysis/master/README_files/figure-gfm/unnamed-chunk-11-2.png)<!-- -->
 
 ``` r
 plot (predict(fitted), rStuRes, main = "Residuals vs. Predicted Response",xlab="Predicted Response",ylab="Residual")
 abline(0,0)
 ```
 
-![](https://github.com/Aadil101/windmill-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-11-3.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/windmill-data-analysis/master/README_files/figure-gfm/unnamed-chunk-11-3.png)<!-- -->
 
 ``` r
 SS_res_b = sum((vap_pres - predict(fitted))^2)
@@ -418,7 +418,7 @@ fit2 = lm(vapRep ~ tempRep)
 abline(fit2$coefficients,col="red") 
 ```
 
-![](https://github.com/Aadil101/windmill-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/windmill-data-analysis/master/README_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
 
 ``` r
 summary(fit2)
@@ -449,14 +449,14 @@ qqnorm(rStuRes, datax = TRUE, main="Normal Probability Plot for Clausius-Clapeyr
 qqline(rStuRes, datax = TRUE)
 ```
 
-![](https://github.com/Aadil101/windmill-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-12-2.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/windmill-data-analysis/master/README_files/figure-gfm/unnamed-chunk-12-2.png)<!-- -->
 
 ``` r
 plot (predict(fit2), rStuRes, main = "Residuals vs. Predicted Response for Clausius-Clapeyron Eq.",xlab="New Predicted Response",ylab="Residual")
 abline(0,0)
 ```
 
-![](https://github.com/Aadil101/windmill-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-12-3.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/windmill-data-analysis/master/README_files/figure-gfm/unnamed-chunk-12-3.png)<!-- -->
 
 ``` r
 SS_res_c = sum((vapRep - predict(fit2))^2)
@@ -481,7 +481,7 @@ k = 1
 plot(minExp, numBact, xlab="Minutes of Exposure", ylab="Number of Bacteria")
 ```
 
-![](https://github.com/Aadil101/windmill-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/windmill-data-analysis/master/README_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
 
 It does not appear that a straight-line model will be adequate because minutes of exposure seems to asymptotically approach zero, slope getting less negative as minutes of exposure increases.
 
@@ -493,7 +493,7 @@ fit = lm(numBact ~ minExp)
 abline(fit, col="red")
 ```
 
-![](https://github.com/Aadil101/windmill-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/windmill-data-analysis/master/README_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
 
 ``` r
 summary(fit)
@@ -523,14 +523,14 @@ qqnorm(rStuRes, datax = TRUE, main="Normal Probability Plot")
 qqline(rStuRes, datax = TRUE)
 ```
 
-![](https://github.com/Aadil101/windmill-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-14-2.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/windmill-data-analysis/master/README_files/figure-gfm/unnamed-chunk-14-2.png)<!-- -->
 
 ``` r
 plot(predict(fit), rStuRes, main = "Residuals vs. Predicted Response",xlab="Predicted Response",ylab="Residual")
 abline(0,0)
 ```
 
-![](https://github.com/Aadil101/windmill-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-14-3.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/windmill-data-analysis/master/README_files/figure-gfm/unnamed-chunk-14-3.png)<!-- -->
 
 ``` r
 SS_res_b = sum((numBact - predict(fit))^2)
@@ -549,7 +549,7 @@ fit2 = lm(numBact ~ new_minExp)
 abline(fit2$coefficients,col="red")
 ```
 
-![](https://github.com/Aadil101/windmill-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/windmill-data-analysis/master/README_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
 
 ``` r
 summary(fit2)
@@ -580,14 +580,14 @@ qqnorm(rStuRes, datax = TRUE, main="Normal Probability Plot for Transformed Mode
 qqline(rStuRes, datax = TRUE)
 ```
 
-![](https://github.com/Aadil101/windmill-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-15-2.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/windmill-data-analysis/master/README_files/figure-gfm/unnamed-chunk-15-2.png)<!-- -->
 
 ``` r
 plot (predict(fit2), rStuRes, main = "Residuals vs. Predicted Response for Transformed Model",xlab="New Predicted Response",ylab="Residual")
 abline(0,0)
 ```
 
-![](https://github.com/Aadil101/windmill-data-analysis/tree/master/README_files/figure-gfm/unnamed-chunk-15-3.png)<!-- -->
+![](https://raw.githubusercontent.com/Aadil101/windmill-data-analysis/master/README_files/figure-gfm/unnamed-chunk-15-3.png)<!-- -->
 
 ``` r
 SS_res_c = sum((numBact - predict(fit2))^2)
