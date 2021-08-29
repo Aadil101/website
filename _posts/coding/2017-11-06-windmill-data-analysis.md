@@ -10,7 +10,7 @@ show_date: true
 
 This is a homework assignment from Math 50 at Dartmouth College.
 
-Lets first look at the scatter plot for the windmill data, and visually check the straight line fit.
+## Lets first look at the scatter plot for the windmill data, and visually check the straight line fit.
 
 ``` r
 windmill <- read.table("https://math.dartmouth.edu/~m50f17/windmill.csv", header=T)
